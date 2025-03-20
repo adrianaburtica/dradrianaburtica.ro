@@ -345,7 +345,7 @@
                               src="assets/images/service-icon-02.png"
                               alt=""
                           /></span>
-                          Protetica Dentara
+                          Consultatie
                         </div>
                       </div>
                       <div>
@@ -398,51 +398,69 @@
                             <div class="row">
                               <div class="col-lg-6 align-self-center">
                                 <div class="left-text">
-                                  <h4>Protetica Dentară</h4>
+                                  <h4>Consultatie și Igienizare</h4>
                                   <p>
-                                    Protetica dentară se ocupă cu restaurarea și
-                                    înlocuirea dinților deteriorați sau lipsă,
-                                    folosind soluții personalizate pentru
-                                    fiecare pacient. Folosind tehnici avansate
-                                    și materiale de calitate, obiectivul este de
-                                    a restabili atât funcționalitatea, cât și
-                                    estetica zâmbetului dumneavoastră.
+                                    O consultație stomatologică regulată și o
+                                    igienizare profesională sunt esențiale
+                                    pentru menținerea sănătății orale. Aceste
+                                    proceduri ajută la prevenirea problemelor
+                                    dentare și la menținerea unui zâmbet sănătos
+                                    și strălucitor.
                                   </p>
                                   <div class="ticks-list">
                                     <span
-                                      ><i class="fa fa-check"></i> Coroane și
-                                      punți dentare personalizate</span
+                                      ><i class="fa fa-check"></i> Examinare
+                                      detaliată a sănătății orale</span
                                     >
                                     <span
-                                      ><i class="fa fa-check"></i> Proteze
-                                      dentare complete sau parțiale</span
+                                      ><i class="fa fa-check"></i> Identificarea
+                                      precoce a problemelor dentare</span
                                     >
                                     <span
-                                      ><i class="fa fa-check"></i> Implanturi
-                                      dentare pentru înlocuirea dinților
-                                      pierduți</span
+                                      ><i class="fa fa-check"></i> Curățare
+                                      profesională a tartrului și plăcii
+                                      bacteriene</span
                                     >
                                     <span
-                                      ><i class="fa fa-check"></i> Restaurări
-                                      estetice de înaltă calitate</span
+                                      ><i class="fa fa-check"></i> Airflow
+                                      pentru îndepărtarea petelor dentare</span
                                     >
                                     <span
-                                      ><i class="fa fa-check"></i> Proteze și
-                                      coroane din materiale durabile</span
+                                      ><i class="fa fa-check"></i> Fluorizare
+                                      pentru protecția smalțului dentar</span
                                     >
                                     <span
-                                      ><i class="fa fa-check"></i> Soluții
-                                      personalizate pentru confort și
-                                      estetică</span
+                                      ><i class="fa fa-check"></i> Recomandări
+                                      personalizate pentru îngrijirea
+                                      dentară</span
                                     >
                                   </div>
                                   <p>
-                                    La cabinetul nostru, ne concentrăm pe
-                                    oferirea celor mai bune soluții protetice
-                                    pentru fiecare pacient, adaptând
-                                    tratamentele în funcție de nevoile
-                                    individuale și dorințele estetice.
+                                    Vizitele regulate la dentist sunt cheia unui
+                                    zâmbet sănătos. Echipa noastră vă oferă
+                                    îngrijire atentă și soluții eficiente pentru
+                                    prevenirea problemelor dentare.
                                   </p>
+                                  <div class="border-first-button">
+                                    <a
+                                      href="javascript:void(0);"
+                                      id="choosePackageButton"
+                                      >Alege pachetul</a
+                                    >
+                                  </div>
+
+                                  <div
+                                    id="myModal"
+                                    class="modal"
+                                  >
+                                    <div class="modal-content">
+                                      <span class="close">&times;</span>
+                                      <p>
+                                        Multumim că ai ales această opțiune, te
+                                        vom contacta!
+                                      </p>
+                                    </div>
+                                  </div>
                                 </div>
                               </div>
 
@@ -1169,5 +1187,28 @@
     <script src="assets/js/animation.js"></script>
     <script src="assets/js/imagesloaded.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script>
+      // Obține elementele modalului
+      var modal = document.getElementById("myModal");
+      var btn = document.getElementById("choosePackageButton");
+      var span = document.getElementsByClassName("close")[0];
+
+      // Când utilizatorul face clic pe buton, deschide modalul
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
+
+      // Când utilizatorul face clic pe <span> (x), închide modalul
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // Când utilizatorul face clic oriunde în afara modalului, închide-l
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
   </body>
 </html>
